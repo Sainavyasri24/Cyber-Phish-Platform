@@ -1,0 +1,27 @@
+# Environment
+venv/
+.env
+__pycache__/
+*.pyc
+
+# IDEs
+.vscode/
+.idea/
+
+# Node
+node_modules/
+dist/
+
+# Database
+*.db
+*.sqlite3
+
+# Models
+# (We might want to commit the model if it's small, it's 600kb so we will NOT ignore it)
+# phishing_model.pkl
+
+# Logs / Temp
+*.log
+result.txt
+result_utf8.txt
+debug*.json

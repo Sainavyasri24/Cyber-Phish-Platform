@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-black text-gray-200 font-sans antialiased;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-sans;
+  }
+}
+
+@layer components {
+  .nav-link {
+    @apply px-4 py-2 hover:bg-gray-800 cursor-pointer text-gray-300 transition-colors;
+  }
+
+  .nav-link-active {
+    @apply px-4 py-2 bg-gray-800 text-white border-b-2 border-blue-500;
+  }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes scanPulse {
+  0%, 100% { opacity: 1; }
+  50%       { opacity: 0.4; }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.35s ease-out forwards;
+}
+
+.animate-scan-pulse {
+  animation: scanPulse 1.2s ease-in-out infinite;
+}
