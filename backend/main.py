@@ -4,7 +4,7 @@ from fastapi.security import OAuth2PasswordRequestForm
 from pydantic import BaseModel
 from datetime import datetime, timedelta
 from sqlalchemy.orm import Session
-
+from backend.model import predict
 from model import (
     extract_url_features,
     extract_network_features,
